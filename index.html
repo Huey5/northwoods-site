@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Northwoods — AI help for small businesses, Appleton WI</title>
-<meta name="description" content="Northwoods builds plain, working AI for small businesses in the Fox Valley: a receptionist that answers when you can't, and more on the way. Hear it: (920) 806-8267.">
+<meta name="description" content="Northwoods answers your phone. Every call, first ring, day or night, with the details in writing within a minute. Appleton, Wisconsin. Hear it: (920) 806-8267.">
 <style>
   :root{--ink:#1d2a2a;--soft:#4f5f5d;--line:#d8ddd9;--paper:#f7f6f1;--card:#ffffff;--pine:#1f5c4a;--pine-d:#164536;--amber:#c7862b;}
   *{box-sizing:border-box}
@@ -23,10 +23,20 @@
   .call{display:inline-block;background:var(--pine);color:#fff;text-decoration:none;padding:12px 18px;border-radius:6px;font-size:18px;margin:10px 0 6px}
   .call:hover{background:var(--pine-d)}
   .note{font-size:15px;color:var(--soft)}
+
+  /* the treeline: drawn, not a photo, so it loads instantly and there is nothing to license */
+  .treeline{display:block;width:100%;max-width:1400px;margin:26px auto 0;padding:0}
+  .treeline svg{display:block;width:100%;height:auto}
+  .ridge-far{fill:var(--pine);opacity:.16}
+  .ridge-near{fill:var(--pine);opacity:.32}
+
   .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
-  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px}
-  .tag{display:inline-block;font:13px/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:4px;background:#e8f0ec;color:var(--pine);margin-bottom:10px}
+  @media(min-width:560px){.grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:820px){.grid{grid-template-columns:repeat(3,1fr);gap:16px}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px;display:flex;flex-direction:column}
+  .card p{font-size:16px;line-height:1.5}
+  .card p:last-child{margin-bottom:0}
+  .tag{display:inline-block;align-self:flex-start;font:13px/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:4px;background:#e8f0ec;color:var(--pine);margin-bottom:10px}
   .tag.soon{background:#f4ecdd;color:#8a5a12}
   ol,ul{padding-left:22px}
   li{margin-bottom:8px}
@@ -45,35 +55,87 @@
   <p class="lead">Northwoods is a small company in Appleton, Wisconsin. We build the boring, useful kind of AI for small businesses: things that take a job off your plate today, cost less than a part-time hire, and never need a manual.</p>
   <a class="call" href="tel:+19208068267">Hear it live: (920) 806-8267</a>
   <p class="note">That number is answered by our own receptionist, the same one we set up for you. Call it and ask it anything.</p>
+</main>
 
+<div class="treeline" aria-hidden="true">
+  <svg viewBox="0 0 1200 150" preserveAspectRatio="xMidYMax slice" role="presentation">
+    <defs>
+      <path id="pine" d="M0 0 L-15 0 L-8.5 -17 L-11.5 -17 L-6.5 -32 L-9 -32 L0 -50 L9 -32 L6.5 -32 L11.5 -17 L8.5 -17 L15 0 Z"/>
+    </defs>
+    <g class="ridge-far">
+      <use href="#pine" transform="translate(30 150) scale(1.5)"/>
+      <use href="#pine" transform="translate(95 150) scale(1.1)"/>
+      <use href="#pine" transform="translate(150 150) scale(1.75)"/>
+      <use href="#pine" transform="translate(220 150) scale(1.2)"/>
+      <use href="#pine" transform="translate(275 150) scale(1.6)"/>
+      <use href="#pine" transform="translate(345 150) scale(1.05)"/>
+      <use href="#pine" transform="translate(400 150) scale(1.65)"/>
+      <use href="#pine" transform="translate(470 150) scale(1.25)"/>
+      <use href="#pine" transform="translate(530 150) scale(1.8)"/>
+      <use href="#pine" transform="translate(605 150) scale(1.15)"/>
+      <use href="#pine" transform="translate(660 150) scale(1.55)"/>
+      <use href="#pine" transform="translate(730 150) scale(1.3)"/>
+      <use href="#pine" transform="translate(790 150) scale(1.7)"/>
+      <use href="#pine" transform="translate(862 150) scale(1.1)"/>
+      <use href="#pine" transform="translate(918 150) scale(1.6)"/>
+      <use href="#pine" transform="translate(988 150) scale(1.2)"/>
+      <use href="#pine" transform="translate(1045 150) scale(1.75)"/>
+      <use href="#pine" transform="translate(1118 150) scale(1.35)"/>
+      <use href="#pine" transform="translate(1180 150) scale(1.5)"/>
+    </g>
+    <g class="ridge-near">
+      <use href="#pine" transform="translate(0 152) scale(1.05)"/>
+      <use href="#pine" transform="translate(58 152) scale(.8)"/>
+      <use href="#pine" transform="translate(112 152) scale(1.15)"/>
+      <use href="#pine" transform="translate(178 152) scale(.9)"/>
+      <use href="#pine" transform="translate(238 152) scale(1.2)"/>
+      <use href="#pine" transform="translate(305 152) scale(.85)"/>
+      <use href="#pine" transform="translate(362 152) scale(1.1)"/>
+      <use href="#pine" transform="translate(428 152) scale(.95)"/>
+      <use href="#pine" transform="translate(492 152) scale(1.25)"/>
+      <use href="#pine" transform="translate(562 152) scale(.85)"/>
+      <use href="#pine" transform="translate(620 152) scale(1.1)"/>
+      <use href="#pine" transform="translate(690 152) scale(.95)"/>
+      <use href="#pine" transform="translate(752 152) scale(1.2)"/>
+      <use href="#pine" transform="translate(822 152) scale(.8)"/>
+      <use href="#pine" transform="translate(878 152) scale(1.15)"/>
+      <use href="#pine" transform="translate(948 152) scale(.9)"/>
+      <use href="#pine" transform="translate(1008 152) scale(1.2)"/>
+      <use href="#pine" transform="translate(1078 152) scale(.85)"/>
+      <use href="#pine" transform="translate(1138 152) scale(1.1)"/>
+      <use href="#pine" transform="translate(1200 152) scale(.95)"/>
+    </g>
+  </svg>
+</div>
+
+<main>
   <h2 id="products">What we sell</h2>
   <div class="grid">
     <div class="card">
       <span class="tag">Available now</span>
       <h3>Northwoods Call Desk</h3>
-      <p>We give you a number and we answer it. Every call, first ring, day or night &mdash; not just the ones you miss. It works as your assistant: gets the job, how urgent, the address and a budget, and gets it to you or whoever is on call within a minute. Rather keep your own line and only send us what you cannot get to? We can do that instead. Free test first, and the number is yours to take with you.</p>
+      <p>We give you a number and we answer it. Every call, first ring, day or night &mdash; not just the ones you miss.</p>
+      <p>It gets the job, how urgent, the address and a budget, and has it to you within a minute.</p>
+      <p>Free test first, and the number is yours to take with you.</p>
     </div>
     <div class="card">
       <span class="tag soon">Coming next</span>
       <h3>Back office paperwork</h3>
-      <p>Estimates, customer emails and the schedule drafted from a two-minute voice note, in your own format and your own words. You approve, it sends. Built with a Fox Valley contractor first.</p>
-    </div>
-    <div class="card">
-      <span class="tag soon">Coming next</span>
-      <h3>Short clips from your long videos</h3>
-      <p>Your walkthroughs and job videos cut into captioned vertical clips for Facebook, Instagram and TikTok, reviewed by a person before you ever see them.</p>
+      <p>Text us the job from the truck, in your own words.</p>
+      <p>The priced estimate comes back on your letterhead, in your folder and your inbox, ready for you to check and send.</p>
     </div>
     <div class="card">
       <span class="tag soon">By conversation</span>
       <h3>AI help and consulting</h3>
-      <p>If you know the job you want off your desk but not the tool, tell us. We'll say honestly whether AI does it well today, and build it if it does.</p>
+      <p>If you know the job you want off your desk but not the tool, tell us.</p>
+      <p>We'll say honestly whether AI does it well today, and build it if it does.</p>
     </div>
   </div>
 
   <h2 id="how">How it works</h2>
   <ol>
     <li><strong>Call or reply.</strong> Fifteen minutes on the phone about the job you want gone.</li>
-    <li><strong>Free test.</strong> We set it up and you try it on real calls. If it is not earning its keep on day one, you owe nothing.</li>
+    <li><strong>Free test.</strong> Point your line at us and try it on real calls. Nothing to reprint, and you can switch it back in a minute.</li>
     <li><strong>Month to month.</strong> No contract. Prices are quoted on the call for the size of your business, in writing, before anything starts.</li>
   </ol>
 
